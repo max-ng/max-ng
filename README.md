@@ -31,4 +31,4 @@ working on medium-sized AI
 #### Contact
 maxnghello at gmail.com
 
-Follow me on Medium: @medium.data.scientist
+Follow me on Medium [[url](https://medium.com/@data.scientist)]
