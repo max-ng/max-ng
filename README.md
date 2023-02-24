@@ -15,7 +15,7 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-working on Custom AI
+working on custom AI
 
 - SMPL: one of the SOTA semi-supervised learning methods [[arXiv](https://arxiv.org/abs/2212.13420)][[code](https://github.com/max-ng/megaboost)]
 - Fastest multiple pickup-dropoff routing engine [closed]
