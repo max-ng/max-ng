@@ -23,7 +23,7 @@ working on custom AI
 - An interesting variant of Monte Carlo [[url](https://medium.com/@data.scientist/solving-the-interesting-bytedance-interview-question-bb30b31cdf5)]
 
 
-
+<iframe src="https://raw.githubusercontent.com/max-ng/max-ng/main/fractal3D.html" frameborder="0" allowfullscreen></iframe>
 <br/><br/><br/><br/><br/><br/><br/><br/>
 
 
