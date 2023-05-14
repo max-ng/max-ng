@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Sierpinski Tetrahedron</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      canvas {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script>
+      function createTetrahedron() {
+        const geometry = new THREE.TetrahedronGeometry(1);
+        const material = new THREE.MeshBasicMaterial({ color: 0xffffff, wireframe: true });
+        return new THREE.Mesh(geometry, material);
+      }
+
+      function sierpinskiTetrahedron(depth, size, position) {
+        const group = new THREE.Group();
+
+        if (depth === 0) {
+          const tetrahedron = createTetrahedron();
+          tetrahedron.scale.set(size, size, size);
+          tetrahedron.position.copy(position);
+          group.add(tetrahedron);
+        } else {
+          const newSize = size / 2;
+          const offset = newSize / 2;
+
+          for (let i = 0; i < 4; i++) {
+            const newPosition = position.clone();
+
+            if (i === 0) {
+              newPosition.y += offset;
+            } else if (i === 1) {
+              newPosition.x += offset;
+            } else if (i === 2) {
+              newPosition.x -= offset;
+              newPosition.z += offset;
+            } else {
+              newPosition.x -= offset;
+              newPosition.z -= offset;
+            }
+
+            const child = sierpinskiTetrahedron(depth - 1, newSize, newPosition);
+            group.add(child);
+          }
+        }
+
+        return group;
+      }
+
+      const scene = new THREE.Scene();
+      const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+
+      const renderer = new THREE.WebGLRenderer();
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      document.body.appendChild(renderer.domElement);
+
+      const fractal = sierpinskiTetrahedron(4, 2, new THREE.Vector3(0, 0, 0));
+      scene.add(fractal);
+
+      camera.position.z = 5;
+
+      function animate() {
+        requestAnimationFrame(animate);
+        fractal.rotation.x += 0.01;
+        fractal.rotation.y += 0.01;
+        renderer.render(scene, camera);
+      }
+
+      animate();
+    </script>
+  </body>
+</html>
