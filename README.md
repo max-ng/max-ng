@@ -47,5 +47,5 @@ I am grateful for computing, and I want to give something back to the field.
 
 ---
 #### Contact
-<br>
-maxnghello at gmail.com
+
+<img src="assets/contact-email.png" alt="Contact email" width="520">
