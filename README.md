@@ -36,7 +36,7 @@ I am grateful for computing, and I want to give something back to the field.
 - The first multilingual English-Chinese LLaMA fine-tuned model in the world.
   [[code](https://github.com/max-ng/pig_zero)] 
 
-- Fastest multiple pickup-dropoff routing engine  
+- Fastest multiple pickup-dropoff N-to-N routing engine  
   [closed]
 
 ---
