@@ -28,8 +28,10 @@ I am grateful for computing, and I want to give something back to the field.
   The first latent reasoning paper, introducing a looped architecture that shows large performance gains for GPT-style models and natural language tasks.
 
 - Self Meta Pseudo Labels: Meta Pseudo Labels Without The Teacher  
-  [[arXiv](https://arxiv.org/abs/2212.13420)][[code](https://github.com/max-ng/megaboost)]  
+  [[arXiv](https://arxiv.org/abs/2212.13420)]  
   Single-model semi-supervised learning, where one model acts as both teacher and student. State-of-the-art on CIFAR at the time.
+
+- Handcrafted a GRU from scratch in 2016, including backpropagation through time, while I was first teaching myself to program. [[code](https://github.com/max-ng/GRU-recurrent-network)]
 
 - The first multilingual English-Chinese LLaMA fine-tuned model in the world.
   [[code](https://github.com/max-ng/pig_zero)] 
