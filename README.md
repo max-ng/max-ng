@@ -43,7 +43,7 @@ I am grateful for computing, and I want to give something back to the field.
 
 #### Some of my product work
 
-- Turn Claude, Codex, Cursor, Openclaw, and agent sessions into encrypted training-data assets for future AI employees.
+- Turn Claude, Codex, Cursor, Openclaw, and agent sessions into encrypted data assets for future AI employees.
   [[code](https://github.com/max-ng/datamoat)] (NEW)
   
 
